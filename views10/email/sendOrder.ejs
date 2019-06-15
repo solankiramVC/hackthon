@@ -1,0 +1,28 @@
+
+<div>
+<% for (var i = 0; i < orderProduct.length; i++) { %>
+<div>
+<% if(orderProduct[i].name){ %>
+    <lable>Category : <%= orderProduct[i].name %></lable>
+<% } else{ %>
+    <lable>Category : Non-Category</lable>
+<% } %>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Quantity</th>
+            <th>packaging</th>
+            <th>Item Name</th>
+        </tr>
+        <% for (var j = 0; j < orderProduct[i].products.length; j++) { %>
+        <tr>
+            <td>0</td>
+            <td><%= orderProduct[i].products[j].items %></td>
+            <td><%= orderProduct[i].products[j].packaging %></td>
+            <td><%= orderProduct[i].products[j].name %></td>
+        </tr>
+        <% } %>
+    </table>
+</div>
+<% } %>
+</div>
