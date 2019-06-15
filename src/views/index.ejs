@@ -1,16 +1,43 @@
+<!doctype html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Conquerors There Is No Finish Line</title>
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SitePoint">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i,900,900i&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
     <body>
-        <form method="post" action="http://192.168.1.195:4000/api/message/save">
-            <lable>Message</lable>
-            <textarea name="message"></textarea>
-            <lable>accessLimit</lable>
-            <input name="accessLimit">
-            <lable>downlaodLimit</lable>
-            <input name="downlaodLimit">
-            <lable>timeLimit</lable>
-            <input name="timeLimit">
-
-            <input type="submit" value="submit" name="submit">
-        </form>
+        <section class="section-main">
+            <div class="box-main">
+                <div class="upload-box">
+                    <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Enter text here..."></textarea>
+                    <form method="post" action="http://192.168.1.136:4000/api/message/save">
+                        <lable>Message</lable>
+                        <textarea name="message"></textarea>
+                        <lable>accessLimit</lable>
+                        <input name="accessLimit">
+                        <lable>downlaodLimit</lable>
+                        <input name="downlaodLimit">
+                        <lable>timeLimit</lable>
+                        <input name="timeLimit">
+                    
+                        <input type="submit" value="submit" name="submit">
+                    </form>
+                    <input type="submit">
+                    <h3 class="title">Drag and drop file</h3>
+                    <p>or click to upload file</p>
+                    <a class="upload-button" href="">upload file</a>
+                </div>
+                <div class="detail-box">
+                    <h2 class="title">Simple, private file sharing</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s</p>
+                </div>
+            </div>
+        </section>
+        
     </body>
 </html>
